@@ -1,6 +1,6 @@
 # Arweave Tools
 
-This repository is a collection of tools that are useful in the Arweave ecosystem. https://arweave.net/gCKPeiHZpJtvrrl8A_tvpl7gaH_3w7k1U84aailvKS8
+This repository is a collection of tools that are useful in the Arweave ecosystem.
 
 ## Playbooks
 
