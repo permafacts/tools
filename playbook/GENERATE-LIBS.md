@@ -1,7 +1,6 @@
 # GENERATE LIBS
 
-This playbook is a how to on creating libraries in this monorepo. See (adding video arweave link here later)
-
+This playbook is a how to on creating libraries in this monorepo. video coming
 ## Generate Svelte Library
 
 - `NAME=<some-name> npm run generate:svelte`
