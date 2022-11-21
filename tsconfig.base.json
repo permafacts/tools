@@ -1,0 +1,31 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@permafacts-tools/react-bar-ui": ["packages/react/bar-ui/src/index.ts"],
+      "@permafacts-tools/react-new-contract": [
+        "packages/react/new-contract/src/index.ts"
+      ],
+      "@permafacts-tools/svelte-bar-ui": [
+        "packages/svelte/bar-ui/src/index.ts"
+      ],
+      "@permafacts-tools/svelte-new-contract": [
+        "packages/svelte/new-contract/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
