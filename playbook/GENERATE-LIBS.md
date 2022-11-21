@@ -1,6 +1,6 @@
 # GENERATE LIBS
 
-This playbook is a how to on creating libraries in this monorepo. See (adding video arweave link here later)
+This playbook is a how to on creating libraries in this monorepo. [video](https://arweave.net/gCKPeiHZpJtvrrl8A_tvpl7gaH_3w7k1U84aailvKS8)
 
 ## Generate Svelte Library
 
