@@ -16,6 +16,7 @@
     "@nrwl/js": "15.2.1",
     "@nrwl/linter": "15.2.1",
     "@nrwl/react": "15.2.1",
+    "@nrwl/storybook": "^15.2.1",
     "@nrwl/web": "15.2.1",
     "@nrwl/workspace": "15.2.1",
     "@nxext/svelte": "^15.0.1",
