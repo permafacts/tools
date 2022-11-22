@@ -46,6 +46,39 @@
       "options": {
         "vitestConfig": "packages/svelte/new-contract/vitest.config.ts"
       }
+    },
+    "storybook": {
+      "executor": "@nrwl/storybook:storybook",
+      "options": {
+        "uiFramework": "@storybook/svelte",
+        "port": 4400,
+        "config": {
+          "configFolder": "packages/svelte/new-contract/.storybook"
+        },
+        "projectBuildConfig": "svelte-new-contract:build-storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@nrwl/storybook:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "uiFramework": "@storybook/svelte",
+        "outputPath": "dist/storybook/svelte-new-contract",
+        "config": {
+          "configFolder": "packages/svelte/new-contract/.storybook"
+        },
+        "projectBuildConfig": "svelte-new-contract:build-storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
     }
   }
 }
