@@ -48,8 +48,20 @@
   "generators": {
     "@nrwl/react": {
       "application": {
+        "style": "css",
+        "unitTestRunner": "jest",
+        "linter": "eslint",
         "babel": true
+      },
+      "component": {
+        "style": "css"
+      },
+      "library": {
+        "style": "css",
+        "unitTestRunner": "jest",
+        "linter": "eslint"
       }
     }
-  }
+  },
+  "defaultProject": "playground"
 }
