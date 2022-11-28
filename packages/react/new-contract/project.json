@@ -70,6 +70,13 @@
           "quiet": true
         }
       }
+    },
+    "deploy": {
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "access": "public",
+        "noBuild": true
+      }
     }
   }
 }

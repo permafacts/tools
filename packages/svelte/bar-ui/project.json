@@ -44,6 +44,14 @@
       "options": {
         "vitestConfig": "packages/svelte/bar-ui/vitest.config.ts"
       }
+    },
+    "deploy": {
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "access": "public",
+        "buildTarget": "production",
+        "noBuild": true
+      }
     }
   }
 }
