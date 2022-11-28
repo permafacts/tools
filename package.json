@@ -84,6 +84,7 @@
     "webpack": "^5.75.0"
   },
   "dependencies": {
+    "arkb": "^1.1.61",
     "arweave": "^1.11.6",
     "arweave-account": "^1.3.4",
     "bignumber.js": "^9.1.0",
