@@ -1,0 +1,51 @@
+{
+  "name": "svelte-connect-wallet",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/svelte/connect-wallet/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/svelte/connect-wallet/**/*.{ts,svelte,spec.ts}"
+        ]
+      }
+    },
+    "check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "svelte-check",
+        "cwd": "packages/svelte/connect-wallet"
+      }
+    },
+    "build": {
+      "executor": "@nxext/vite:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "entryFile": "src/index.ts",
+        "frameworkConfigFile": "@nxext/svelte/plugins/vite",
+        "outputPath": "dist/packages/svelte/connect-wallet",
+        "assets": [
+          {
+            "glob": "/*",
+            "input": "./public/**",
+            "output": "./"
+          }
+        ],
+        "tsConfig": "packages/svelte/connect-wallet/tsconfig.lib.json"
+      },
+      "configurations": {
+        "production": {}
+      }
+    },
+    "test": {
+      "executor": "@nxext/vitest:vitest",
+      "options": {
+        "vitestConfig": "packages/svelte/connect-wallet/vitest.config.ts"
+      }
+    }
+  }
+}
