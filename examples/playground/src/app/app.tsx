@@ -1,11 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { ReactAlexRender } from '@permafacts-tools/react-alex-render';
-import { ReactBarUi } from '@permafacts-tools/react-bar-ui';
-// import { useEffect } from 'react';
-
 export function App() {
-  // useEffect(() => {}, []);
-
   return (
     <>
       <label htmlFor="my-modal-4" className="btn">
@@ -20,16 +13,13 @@ export function App() {
           htmlFor=""
         >
           <iframe
-            src="https://permafacts.arweave.dev/#/renderer/alex-tweet/?data=GrHE3iASdZCWQdT-ySK9Nb4ABWmYZEiqTb9zCSzD1xI"
+            src="https://arweave.net/lm7Nc3mtdDPc6geG3J4VnmumHNGh6jV1ciBqBxw-2yQ/?data=-6Ieh8PFvBIaK2qGz6ZaG_O9DhABT3yu0ly56UeFxMs"
             title="test"
             width="100%"
             height="100%"
           />
         </label>
       </label>
-
-      {/* <ReactAlexRender />
-      <ReactBarUi addr="9x24zjvs9DA5zAz2DmqBWAg6XcxrrE-8w3EkpwRm4e4" /> */}
     </>
   );
 }
