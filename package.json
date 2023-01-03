@@ -11,7 +11,9 @@
     "generate:react-storybook": "nx generate @nrwl/react:storybook-configuration react-${NAME} --no-generateCypressSpecs --standaloneConfig --tsConfiguration --no-interactive",
     "generate:storybooks": "npm run generate:svelte-storybook && npm run generate:react-storybook",
     "svelte:run-storybook": "npm run nx -- run svelte-${NAME}:storybook",
-    "react:run-storybook": "npm run nx -- run react-${NAME}:storybook"
+    "react:run-storybook": "npm run nx -- run react-${NAME}:storybook",
+    "setup-storybook": "node ./tools/scripts/setup-storybook.js ${NAME}",
+    "generate:libs-with-storybooks": "npm run generate:libs && npm run generate:storybooks && npm run setup-storybook"
   },
   "private": true,
   "devDependencies": {

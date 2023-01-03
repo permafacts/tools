@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import { useEffect, useState } from 'react';
 import {
   readState,
@@ -11,7 +10,6 @@ import Account from 'arweave-account';
 import Arweave from 'arweave';
 export { ArAccount } from 'arweave-account';
 
-/* eslint-disable-next-line */
 export interface ReactBarUiProps {
   addr?: string;
   stateFn?(state: any): any;
@@ -41,7 +39,7 @@ export function ReactBarUi(props: ReactBarUiProps) {
     const account = new Account({
       cacheIsActivated: true,
       cacheSize: 100,
-      cacheTime: 3600000, // 3600000ms => 1 hour cache duration
+      cacheTime: 3600000,
     });
     if (addr) {
       account
@@ -154,21 +152,6 @@ export function ReactBarUi(props: ReactBarUiProps) {
             </div>
           </div>
         </div>
-        {/* <div className="stat-figure text-primary">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            className="inline-block w-8 h-8 stroke-current"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-            ></path>
-          </svg>
-        </div> */}
         <div className="stat-title">Balance</div>
         <div className="stat-value text-primary">
           {addr && balances[addr] && (balances[addr] / 1000000).toFixed(2)}

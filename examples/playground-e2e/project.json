@@ -17,6 +17,16 @@
         }
       }
     },
+    "perma-deploy": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "node ./tools/scripts/perma-deploy.js react-alex-render-ui exaples"
+          }
+        ]
+      }
+    },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],

@@ -15,15 +15,34 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@permafacts-tools/ar-kit": ["packages/ar-kit/src/index.ts"],
+      "@permafacts-tools/react-alex-render": [
+        "packages/react/alex-render/src/index.ts"
+      ],
       "@permafacts-tools/react-bar-ui": ["packages/react/bar-ui/src/index.ts"],
+      "@permafacts-tools/react-connect-wallet": [
+        "packages/react/connect-wallet/src/index.ts"
+      ],
       "@permafacts-tools/react-new-contract": [
         "packages/react/new-contract/src/index.ts"
+      ],
+      "@permafacts-tools/react-thirdy-seconds": [
+        "packages/react/thirdy-seconds/src/index.ts"
+      ],
+      "@permafacts-tools/svelte-alex-render": [
+        "packages/svelte/alex-render/src/index.ts"
       ],
       "@permafacts-tools/svelte-bar-ui": [
         "packages/svelte/bar-ui/src/index.ts"
       ],
+      "@permafacts-tools/svelte-connect-wallet": [
+        "packages/svelte/connect-wallet/src/index.ts"
+      ],
       "@permafacts-tools/svelte-new-contract": [
         "packages/svelte/new-contract/src/index.ts"
+      ],
+      "@permafacts-tools/svelte-thirdy-seconds": [
+        "packages/svelte/thirdy-seconds/src/index.ts"
       ]
     }
   },

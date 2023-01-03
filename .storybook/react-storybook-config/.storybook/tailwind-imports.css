@@ -1,0 +1,4 @@
+/* libs/shared/ui/.storybook/tailwind-imports.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
