@@ -49,6 +49,9 @@
       ],
       "@permafacts-tools/svelte-thirdy-seconds": [
         "packages/svelte/thirdy-seconds/src/index.ts"
+      ],
+      "@permafacts-tools/tickets-contract": [
+        "packages/contracts/tickets/src/index.ts"
       ]
     }
   },
