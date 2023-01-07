@@ -32,6 +32,9 @@
       "@permafacts-tools/react-thirdy-seconds": [
         "packages/react/thirdy-seconds/src/index.ts"
       ],
+      "@permafacts-tools/react-tickets": [
+        "packages/react/tickets/src/index.ts"
+      ],
       "@permafacts-tools/svelte-alex-render": [
         "packages/svelte/alex-render/src/index.ts"
       ],
@@ -49,6 +52,9 @@
       ],
       "@permafacts-tools/svelte-thirdy-seconds": [
         "packages/svelte/thirdy-seconds/src/index.ts"
+      ],
+      "@permafacts-tools/svelte-tickets": [
+        "packages/svelte/tickets/src/index.ts"
       ],
       "@permafacts-tools/tickets-contract": [
         "packages/contracts/tickets/src/index.ts"

@@ -1,0 +1,82 @@
+{
+  "name": "svelte-tickets",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/svelte/tickets/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/svelte/tickets/**/*.{ts,svelte,spec.ts}"]
+      }
+    },
+    "check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "svelte-check",
+        "cwd": "packages/svelte/tickets"
+      }
+    },
+    "build": {
+      "executor": "@nxext/vite:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "entryFile": "src/index.ts",
+        "frameworkConfigFile": "@nxext/svelte/plugins/vite",
+        "outputPath": "dist/packages/svelte/tickets",
+        "assets": [
+          {
+            "glob": "/*",
+            "input": "./public/**",
+            "output": "./"
+          }
+        ],
+        "tsConfig": "packages/svelte/tickets/tsconfig.lib.json"
+      },
+      "configurations": {
+        "production": {}
+      }
+    },
+    "test": {
+      "executor": "@nxext/vitest:vitest",
+      "options": {
+        "vitestConfig": "packages/svelte/tickets/vitest.config.ts"
+      }
+    },
+    "storybook": {
+      "executor": "@nrwl/storybook:storybook",
+      "options": {
+        "uiFramework": "@storybook/svelte",
+        "port": 4400,
+        "config": {
+          "configFolder": "packages/svelte/tickets/.storybook"
+        },
+        "projectBuildConfig": "svelte-tickets:build-storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@nrwl/storybook:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "uiFramework": "@storybook/svelte",
+        "outputPath": "dist/storybook/svelte-tickets",
+        "config": {
+          "configFolder": "packages/svelte/tickets/.storybook"
+        },
+        "projectBuildConfig": "svelte-tickets:build-storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    }
+  }
+}
