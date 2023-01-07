@@ -13,7 +13,9 @@
     "svelte:run-storybook": "npm run nx -- run svelte-${NAME}:storybook",
     "react:run-storybook": "npm run nx -- run react-${NAME}:storybook",
     "setup-storybook": "node ./tools/scripts/setup-storybook.js ${NAME}",
-    "generate:libs-with-storybooks": "npm run generate:libs && npm run generate:storybooks && npm run setup-storybook"
+    "generate:libs-with-storybooks": "npm run generate:libs && npm run generate:storybooks && npm run setup-storybook",
+    "generate:nodejs": "nx generate @nrwl/node:library --name=${NAME} --directory=packages/node --buildable --importPath=@permafacts-tools/${NAME} --publishable --simpleModuleName --no-interactive",
+    "generate:contract": "nx generate @nrwl/node:library --name=${NAME} --directory=packages/contracts --buildable --importPath=@permafacts-tools/${NAME}-contract --publishable --simpleModuleName --no-interactive"
   },
   "private": true,
   "devDependencies": {
