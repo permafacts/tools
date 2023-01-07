@@ -2,6 +2,10 @@
 
 This repository is a collection of tools that are useful in the Arweave ecosystem.
 
+## Permaweb Cookbook
+
+- https://github.com/twilson63/permaweb-cookbook
+
 ## Playbooks
 
 - [Link to playbooks](./playbook)
