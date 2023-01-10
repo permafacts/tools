@@ -12,4 +12,4 @@ This playbook is a how to on creating libraries in this monorepo. [See video](ht
 
 ## Generate Both
 
-- `NAME=<some-name> npm run generate:libs`
+- `NAME=<some-name> npm run generate:libs-with-storybooks`
