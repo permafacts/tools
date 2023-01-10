@@ -13,9 +13,13 @@
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
       "@permafacts-tools/ar-kit": ["packages/ar-kit/src/index.ts"],
+      "@permafacts-tools/perma-pals-sdk": [
+        "packages/packages/node/perma-pals-sdk/src/index.ts"
+      ],
       "@permafacts-tools/react-alex-render": [
         "packages/react/alex-render/src/index.ts"
       ],

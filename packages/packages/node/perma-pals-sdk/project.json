@@ -1,0 +1,42 @@
+{
+  "name": "packages-node-perma-pals-sdk",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/packages/node/perma-pals-sdk/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/packages/node/perma-pals-sdk",
+        "tsConfig": "packages/packages/node/perma-pals-sdk/tsconfig.lib.json",
+        "packageJson": "packages/packages/node/perma-pals-sdk/package.json",
+        "main": "packages/packages/node/perma-pals-sdk/src/index.ts",
+        "assets": ["packages/packages/node/perma-pals-sdk/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/packages/node/perma-pals-sdk/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/packages/node/perma-pals-sdk/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "deploy": {
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "access": "public",
+        "noBuild": true
+      }
+    }
+  },
+  "tags": []
+}
